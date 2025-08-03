@@ -1,0 +1,18 @@
+<template name="info">
+  <h2>Learn Meteor!</h2>
+  <ul>
+    <li>
+      <form class="info-link-add">
+        <input type="text" name="title" placeholder="Title" required>
+        <input type="url" name="url" placeholder="Url" required>
+        <input type="submit" name="submit" value="Add new link">
+      </form>
+    </li>
+    {{#each links}}
+      <li>
+        <a href="{{url}}" target="_blank" class="{{disabledClass}}">{{title}}</a>
+        <button class="toggle-disabled">Toggle Disabled</button>
+      </li>
+    {{/each}}
+  </ul>
+</template>
