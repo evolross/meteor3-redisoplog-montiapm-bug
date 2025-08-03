@@ -1,3 +1,8 @@
+You'll need to install and have Redis running locally at `127.0.0.1` on port `6379`.  You can start redis using:
+```
+redis-server <path to meteor project>/redis/redis.conf
+```
+
 Run project using the following so `redis-oplog` connects:
 ```
 meteor --settings config/settings.json
